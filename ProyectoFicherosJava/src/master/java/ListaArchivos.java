@@ -23,7 +23,7 @@ public class ListaArchivos {
 		System.out.println("Total Archivos .txt = " + totalArchivos);
 	}
 
-	static ArrayList<String> getCarpetas(String rutaDirectorio) {
+	static ArrayList<String> getCarpetas(String rutaDirectorio) { //metodo: tipo ArrayList nombre y recibe por parametros String
 		ArrayList<String> carpetas = new ArrayList<String>();
 		File ruta = new File(rutaDirectorio);
 		if (!ruta.exists()) {

@@ -11,11 +11,12 @@ import java.util.HashMap;
 
 public class Consulta {
 //En un arrayList guardamos las provincias 
-	public ArrayList<String> leerArchivo(String nombreArchivo) {
-		ArrayList<String> lineasArchivo = new ArrayList<String>();
+	public ArrayList<String> leerArchivo(String nombreArchivo) {  //"getter" metodo arraylist que recibe como parametro nombreArchivo
+		ArrayList<String> lineasArchivo = new ArrayList<String>(); //instacia del ArrayList
 		BufferedReader archivo = null;
 		try {
-			archivo = new BufferedReader(new FileReader(nombreArchivo));
+			//BufferedReader para leer lineas completas de una secuencia de entrada
+			 archivo = new BufferedReader(new FileReader(nombreArchivo));  
 			String linea = "";
 			while (linea != null) {
 				linea = archivo.readLine();

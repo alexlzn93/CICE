@@ -9,8 +9,7 @@ public class LeerArchivoTexto {
 	public static void main(String[] args) {
 		BufferedReader archi = null;
 		try {
-			archi = new BufferedReader(
-					new FileReader("F:\\Proyectos\\ejemplo.txt"));
+			archi = new BufferedReader(new FileReader("F:\\Proyectos\\ejemplo.txt"));
 			String linea;
 			while((linea = archi.readLine()) != null) {
 				System.out.println(linea);
